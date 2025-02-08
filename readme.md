@@ -7,7 +7,7 @@ __main() {
 
   {
     # 镜像准备
-    _image1="registry.cn-hangzhou.aliyuncs.com/lwmacct/ubuntu:noble-t2412300"
+    _image1="ghcr.io/lwmacct/250209-cr-ubuntu:noble-t2502090"
     _image2="$(docker images -q $_image1)"
     if [[ "$_image2" == "" ]]; then
       docker pull $_image1
